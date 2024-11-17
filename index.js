@@ -3,7 +3,7 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const { createDB, createTable, uploadFile, createSentences, getFiles, getFileSentences, getSentence, updateTranslations } = require('./lib/database');
+const { createDB, createTable, uploadFile, getFiles, getFileSentences, getSentence, updateTranslations } = require('./lib/database');
 const { CREATE_FILES_TABLE_QUERY, CREATE_TRANSLATIONS_TABLE_QUERY } = require('./lib/sql-queries')
 
 const app = express();
